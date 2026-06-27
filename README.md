@@ -41,3 +41,9 @@ The initial dataset contained a severe **3:1 class imbalance** (3,875 Pneumonia 
 
 1. **The Problem:** In the baseline training run, the model achieved an overall accuracy of 78% but suffered from a low healthy lung recall of **41%** because it biased its predictions toward the majority class (Pneumonia).
 2. **The Solution:** Instead of accepting flawed results, **Class Weights** were calculated and passed directly into the loss function penalty structure. By punishing the model roughly 2.89x harder for missing a "Normal" image, the network balanced its predictions perfectly—skyrocketing the overall accuracy to **88%**.
+
+
+
+
+## 🌐 Live Web Demo
+You can try the model yourself here: [https://huggingface.co/spaces/dibyaswayam/pneumonia-ai-detector](https://huggingface.co/spaces/dibyaswayam/pneumonia-ai-detector)
